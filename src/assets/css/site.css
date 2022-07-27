@@ -1,0 +1,32 @@
+
+ul{
+    list-style: none;
+    margin: 0 !important;
+    padding: 10px 0 !important
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-profil-link-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.my-header{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    border: black solid 1px;
+}
+.my-navbar-active {
+    border-bottom: 3px solid black;
+    font-weight: bolder;
+}

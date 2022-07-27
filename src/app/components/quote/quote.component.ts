@@ -9,6 +9,9 @@ export class QuoteComponent implements OnInit {
   
   @Input()
   quoteID: string = "first-quote"
+  
+  @Input()
+  quoteMessage: string = "Learn what needs to be learned."
 
   
 

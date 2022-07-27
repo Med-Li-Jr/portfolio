@@ -30,10 +30,13 @@ a{
     border-bottom: 3px solid black;
     font-weight: bolder;
 }
-
+/* 
 .quote {
     height: 200px !important;
-}
+} */
 .content-quote {
     width: 100%;
+}
+.colored-text {
+    color: #6030b1;
 }

@@ -8,7 +8,10 @@ a {
     text-decoration: none;
     color: black;
 }
-
+.my_section {
+    padding-top: 70px !important;
+    margin-top: 0 !important;
+}
 .home-profil-link-content {
 
     display: flex;
@@ -32,10 +35,11 @@ a {
     font-weight: bolder;
 }
 
-/* 
+
 .quote {
-    height: 200px !important;
-} */
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
+}
 .content-quote {
     width: 100%;
 }
@@ -60,3 +64,29 @@ a {
     color: black;
     border: solid black;
 }
+
+.btn-detail-project {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.8rem;
+}
+.btn-detail-project:hover {
+    background-color: white;
+    color: #0d6efd;
+    border: solid #0d6efd;
+}
+.fit-cover {
+    object-fit: cover;
+  }
+/*   
+  @media (min-width: 768px) {
+    .fit-cover {
+      position: absolute;
+    }
+  } */
+
+  #about-page{
+    margin-bottom: 5rem !important;
+    margin-top: 0rem !important;
+  }

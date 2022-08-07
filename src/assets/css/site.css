@@ -1,5 +1,5 @@
 body {
-    /* background-color: #f5f5f9; */
+    /* background-color: #f5f4fc; */
 }
 ul {
     list-style: none;
@@ -18,7 +18,8 @@ a {
 
 
 .my-header {
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: #f5f4fc;
     width: 100%;
     position: sticky;
     left: 0;
@@ -53,29 +54,20 @@ a {
 }
 
 .btn-resume {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    border: solid white;
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    box-shadow: 7px 7px 0px #333;
     border-radius: 0.5rem;
-    padding: 0.6rem;
+    padding: 0.7rem 0.9rem !important;
 }
 .btn-resume:hover {
-    background-color: white;
-    color: black;
-    border: solid black;
-}
-
-.btn-detail-project {
+    border: solid white 2px;
     background-color: black;
     color: white;
-    border-radius: 0.5rem;
-    padding: 0.6rem 0.8rem;
+    box-shadow: 7px 7px 0px #fff;
 }
-.btn-detail-project:hover {
-    background-color: white;
-    color: black;
-    border: solid black;
-}
+
 .fit-cover {
     object-fit: cover;
   }
@@ -100,3 +92,23 @@ a {
   .content-page {
     max-width: 90%;
   }
+  .description-project {
+    border: solid black 2px;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px #aaa, 10px 10px 8px #fff
+  }
+
+.btn-detail-project {
+    border: solid white 2px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem !important;
+}
+.btn-detail-project:hover {
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    box-shadow: 7px 7px 0px #333;
+    
+}

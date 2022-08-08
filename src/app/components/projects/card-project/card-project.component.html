@@ -1,5 +1,5 @@
 <div class="row g-0 p-3 justify-content-center align-items-center">
-    <div class="col-lg-6 col-md-10 col-sm-10 p-2 border border-dark">
+    <div class="col-lg-6 col-md-10 col-sm-10 p-2 border border-dark" style="background-color: #f9f9f9;">
         <!-- <div class="d-flex justify-content-center" style="object-fit: cover;">
             <img src="assets/icons/Detail-Missions.png" class="myImg" alt="...">
         </div> -->
@@ -8,11 +8,11 @@
             <div class="carousel-indicators">
                 <!-- <div *ngIf="currentProject.images_app.length > 0"> -->
 
-                    <button *ngFor="let item of currentProject.images_app; let i = index"
-                            type="button" [attr.data-bs-target]="'#' + currentProject.carousel_name"
-                        [attr.data-bs-slide-to]="'' + i" class="{{item.split(';')[0]}} bg-dark" aria-current="true"
-                        [attr.aria-label]="'Slide ' + (i+1)"></button>
-<!-- 
+                <button *ngFor="let item of currentProject.images_app; let i = index" type="button"
+                    [attr.data-bs-target]="'#' + currentProject.carousel_name" [attr.data-bs-slide-to]="'' + i"
+                    class="{{item.split(';')[0]}} bg-dark" aria-current="true"
+                    [attr.aria-label]="'Slide ' + (i+1)"></button>
+                <!-- 
                     <div *ngFor="let item of currentProject.images_app; let i = index">
                         <button *ngIf="i != 0" type="button" [attr.data-bs-target]="'#' + currentProject.carousel_name"
                             [attr.data-bs-slide-to]="''+ (i+1)" class="bg-dark" aria-current="true"
@@ -27,14 +27,14 @@
             <div class="carousel-inner">
 
                 <!-- <div *ngIf="currentProject.images_app.length > 0"> -->
-                    <!-- <div class="carousel-item"> -->
-                        <div *ngFor="let item of currentProject.images_app; let i = index"
-                            class="carousel-item {{item.split(';')[0]}}">
-                            <div class="d-flex justify-content-center p-3" style="height: 300px">
-                                <img src="{{item.split(';')[1]}}" class="d-block myImg" alt="...">
-                            </div>
-                        <!-- </div> -->
-<!-- 
+                <!-- <div class="carousel-item"> -->
+                <div *ngFor="let item of currentProject.images_app; let i = index"
+                    class="carousel-item {{item.split(';')[0]}}">
+                    <div class="d-flex justify-content-center p-3" style="height: 300px">
+                        <img src="{{item.split(';')[1]}}" class="d-block myImg" alt="...">
+                    </div>
+                    <!-- </div> -->
+                    <!-- 
                         <div *ngFor="let item of currentProject.images_app; let i = index">
                             <div *ngIf="i != 0" class="carousel-item">
                                 <div class="d-flex justify-content-center p-3" style="height: 300px">
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
+                </div>
                 <!-- </div> -->
                 <!-- <div class="carousel-item">
                     <div class="d-flex justify-content-center p-3" style="height: 300px">
@@ -73,8 +73,10 @@
         <div class="card-body p-2 pe-0">
             <h5 class="fs-3 fw-bold">
                 <span class="link-dark text-decoration-none">
-                    <img *ngIf="currentProject.is_mobile" src="assets/icons/mobile.png" height="25px" width="25px" class="mx-1" alt="...">
-                    <img *ngIf="currentProject.is_web" src="assets/icons/website.png" height="25px" width="25px" class="mx-1" alt="...">    
+                    <img *ngIf="currentProject.is_mobile" src="assets/icons/mobile.png" height="25px" width="25px"
+                        class="mx-1" alt="...">
+                    <img *ngIf="currentProject.is_web" src="assets/icons/website.png" height="25px" width="25px"
+                        class="mx-1" alt="...">
                     {{currentProject.name}}
                 </span>
             </h5>
@@ -84,16 +86,9 @@
                     {{currentProject.description}}
                 </div>
             </div>
-            <div class="">
-                <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end my-3">
-                    <span class="badge bg-secondary p-2"
-                        *ngFor="let item of currentProject.technologies">{{item}}</span>
-                    <!-- <span class="badge bg-secondary p-2">Angular</span>
-                    <span class="badge bg-secondary p-2">Flutter</span>
-                    <span class="badge bg-secondary p-2">.Net Core</span>
-                    <span class="badge bg-secondary p-2">Angular</span>
-                    <span class="badge bg-secondary p-2">Flutter</span> -->
-                </div>
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end my-2">
+                <span class="badge bg-secondary p-2 m-1"
+                    *ngFor="let item of currentProject.technologies">{{item}}</span>
             </div>
 
             <div class="mt-1" *ngIf="currentProject.link_url.length > 0">

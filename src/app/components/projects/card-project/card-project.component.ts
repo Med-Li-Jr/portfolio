@@ -19,7 +19,7 @@ export class CardProjectComponent implements OnInit {
     is_web: false,
     link_url: "",
     images_app:  [],
-    technologies: []
+    technologies: [],
   };
 
   ngOnInit(): void {

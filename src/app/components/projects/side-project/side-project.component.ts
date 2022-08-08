@@ -2,13 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ProjectModal } from 'src/app/modals/project.modal';
 
 @Component({
-  selector: 'app-card-project',
-  templateUrl: './card-project.component.html',
-  styleUrls: ['./card-project.component.css']
+  selector: 'app-side-project',
+  templateUrl: './side-project.component.html',
+  styleUrls: ['./side-project.component.css']
 })
-export class CardProjectComponent implements OnInit {
-
-  constructor() { }
+export class SideProjectComponent implements OnInit {
 
   @Input()
   currentProject: ProjectModal = {
@@ -21,6 +19,8 @@ export class CardProjectComponent implements OnInit {
     images_app:  [],
     technologies: [],
   };
+
+  constructor() { }
 
   ngOnInit(): void {
   }

@@ -112,3 +112,9 @@ a {
     box-shadow: 7px 7px 0px #333;
     
 }
+.side-card {
+  border: solid black 1px;
+  background-color: white;
+  color: black;
+  box-shadow: 7px 7px 0px #ddd;
+}

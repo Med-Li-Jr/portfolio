@@ -7,16 +7,14 @@ export let projectsDB: ProjectModal[] = [
         name: "Web Application Management",
         description: `Allows a company to manage the usage of each of the applications it offers to its customers.
                      It also allows the company to restrict the access of the customer, by his IP address, to other applications and 
-                     gives a global view of those applications with some statistical.`,
+                     gives a global view of those applications with some graphs.`,
         is_mobile: false,
         is_web: true,
         link_url: "",
         technologies: [
             "C#", 
-            ".Net Core MVC", 
-            ".Net Core API", 
+            ".Net Core MVC/API", 
             "SQL Server", 
-            "xUnit"
         ],
         // version: 1,
         // technologies2: [],
@@ -34,7 +32,9 @@ export let projectsDB: ProjectModal[] = [
     {
         carousel_name: "licence_app",
         name: "Fleet Management",
-        description: "A management platform that allows an organization to manage their fleet vehicle and everything around such as insurances and vehicle vignette as well as the employees, drivers and their roles. It also shows, on a map, in real-time, the location of each driver when they start their missions.",
+        description: `A management platform that allows an organization to manage their fleet vehicle and 
+        everything around such as insurances and vehicle vignette as well as the employees, drivers and their roles. 
+        It also shows, on a map, in real-time, the location of each driver when they start their missions.`,
         is_mobile: true,
         is_web: true,
         link_url: "https://www.m-test-ang.tk/login",
@@ -57,9 +57,18 @@ export let projectsDB: ProjectModal[] = [
         //     "MapBox API"
         // ],
         images_app: [
-            "active;assets/icons/Detail-Missions.png",
-            ";assets/icons/Detail-Missions.png",
-            ";assets/icons/interfaces.png",
+            "active;assets/icons/licence1.png",
+            ";assets/icons/licence2.png",
+            ";assets/icons/licence3.png",
+            ";assets/icons/licence3a.png",
+            ";assets/icons/licence4.png",
+            ";assets/icons/licence5.png",
+            ";assets/icons/licence6.png",
+            ";assets/icons/licence6a.png",
+            ";assets/icons/licence7.png",
+            ";assets/icons/licence7a.png",
+            ";assets/icons/licence8.png",
+            ";assets/icons/licence9.png",
         ],
     },
     {
@@ -93,6 +102,63 @@ export let projectsDB: ProjectModal[] = [
             ";assets/icons/uber10.png",
             ";assets/icons/uber11.png",
             ";assets/icons/uber12.png",
+        ],
+    }
+] 
+
+export let sideProjectsDB: ProjectModal[] = [
+
+    {
+        carousel_name: "fleet_app",
+        name: "Fleet App",
+        description: `A new short version of the 'Fleet Management' project developed with new technologies.`,
+        is_mobile: true,
+        is_web: true,
+        link_url: "",
+        technologies: [
+            "C#", 
+            ".Net Core API", 
+            "Angular", 
+            "Flutter", 
+            "SQL Server", 
+            "Firebase", 
+            "MapBox API", 
+        ],
+        images_app: [
+        ],
+    },
+    {
+        carousel_name: "construction_app",
+        name: "Construction App",
+        description: `Allows a contractor to manage construction operations on his sites.
+        From the equipment management to employee management and their schedule management.`,
+        is_mobile: true,
+        is_web: false,
+        link_url: "https://www.m-test-ang.tk/login",
+        technologies: [
+            "JAVA",
+            "Android Studio",
+            "Firebase",
+        ],
+        images_app: [
+        ],
+    },
+    {
+        carousel_name: "real_estate_app",
+        name: "Real Estate App",
+        description: `Allows a entity to manage its real estate assets.
+        From invoice management to tenant rent management. It also allows an individual to search
+        for properties to rent with specific criteria.`,
+        is_mobile: true,
+        is_web: false,
+        link_url: "",
+        technologies: [
+            "JAVA",
+            "Android Studio",
+            "Laravel",
+            "MySQL",
+        ],
+        images_app: [
         ],
     }
 ] 

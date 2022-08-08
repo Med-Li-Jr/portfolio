@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { projectsDB } from 'src/app/modals/data-moacks';
+import { projectsDB, sideProjectsDB } from 'src/app/modals/data-moacks';
 import { ProjectModal } from 'src/app/modals/project.modal';
 
 @Component({
@@ -10,11 +10,13 @@ import { ProjectModal } from 'src/app/modals/project.modal';
 export class ProjectsComponent implements OnInit {
 
   allProjects: ProjectModal[] = []
+  allSideProjects: ProjectModal[] = []
 
   constructor() { }
 
   ngOnInit(): void {
     this.allProjects = projectsDB;
+    this.allSideProjects = sideProjectsDB;
   }
 
 }

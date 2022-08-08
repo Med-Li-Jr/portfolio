@@ -1,0 +1,15 @@
+<div class="d-flex align-items-start flex-column h-100">
+    <div class="fw-bold fs-5">
+        {{currentProject.name}}
+        <img *ngIf="currentProject.is_mobile" src="assets/icons/mobile.png" height="25px" width="25px" class="mx-1"
+            alt="...">
+        <img *ngIf="currentProject.is_web" src="assets/icons/website.png" height="25px" width="25px" class="mx-1"
+            alt="...">
+    </div>
+    <div class="mt-2 mb-2 align-self-center">
+        {{currentProject.description}}
+    </div>
+    <div class="mt-3 mt-auto">
+        <span class="badge bg-secondary p-2 m-1 ms-0" *ngFor="let item of currentProject.technologies">{{item}}</span>
+    </div>
+</div>

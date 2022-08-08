@@ -31,7 +31,7 @@
                 <div *ngFor="let item of currentProject.images_app; let i = index"
                     class="carousel-item {{item.split(';')[0]}}">
                     <div class="d-flex justify-content-center p-3" style="height: 300px">
-                        <img src="{{item.split(';')[1]}}" class="d-block myImg" alt="...">
+                        <img src="{{item.split(';')[1]}}" class="d-block " alt="...">
                     </div>
                     <!-- </div> -->
                     <!-- 
@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <div class="col-lg-6 col-md-10 col-sm-10 text-end mt-2">
+    <div class="col-lg-6 col-md-10 col-sm-10 text-end mt-3">
 
         <div class="card-body p-2 pe-0">
             <h5 class="fs-3 fw-bold">

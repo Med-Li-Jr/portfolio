@@ -9,6 +9,7 @@ import { CardProjectComponent } from './components/projects/card-project/card-pr
 import { DetailProjectComponent } from './components/projects/detail-project/detail-project.component';
 import { ListProjectComponent } from './components/projects/list-project/list-project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SideProjectComponent } from './components/projects/side-project/side-project.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
@@ -50,5 +51,6 @@ export const RoutingComponents = [
   ListProjectComponent,
   MainLayoutComponent,
   CardProjectComponent,
-  DetailProjectComponent
+  DetailProjectComponent,
+  SideProjectComponent
 ]

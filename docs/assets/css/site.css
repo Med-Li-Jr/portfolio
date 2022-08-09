@@ -1,0 +1,120 @@
+body {
+    /* background-color: #f5f4fc; */
+}
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 10px 0 !important
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.my_section {
+    padding-top: 70px !important;
+    margin-top: 0 !important;
+}
+
+
+.my-header {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: #f5f4fc;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    border: black solid 1px;
+}
+
+.my-navbar-active {
+    border-bottom: 3px solid black;
+    font-weight: bolder;
+}
+
+
+.quote {
+    margin: 2rem 0 !important;
+}
+.content-quote {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px #333, 10px 10px 8px #aaa, 15px 15px 8px #fff;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
+    /* z-index: 99; */
+}
+
+.colored-text {
+    color: #6030b1;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-resume {
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    box-shadow: 7px 7px 0px #333;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.9rem !important;
+}
+.btn-resume:hover {
+    border: solid white 2px;
+    background-color: black;
+    color: white;
+    box-shadow: 7px 7px 0px #fff;
+}
+
+.fit-cover {
+    object-fit: cover;
+  }
+/*   
+  @media (min-width: 768px) {
+    .fit-cover {
+      position: absolute;
+    }
+  } */
+
+  #about-page{
+    margin-bottom: 5rem !important;
+    margin-top: 0rem !important;
+  }
+  .myImg {
+    max-height: 100%;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .content-page {
+    max-width: 90%;
+  }
+  .description-project {
+    border: solid black 2px;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px #aaa, 10px 10px 8px #fff
+  }
+
+.btn-detail-project {
+    border: solid white 2px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem !important;
+}
+.btn-detail-project:hover {
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    box-shadow: 7px 7px 0px #333;
+    
+}
+.side-card {
+  border: solid black 1px;
+  background-color: white;
+  color: black;
+  box-shadow: 7px 7px 0px #ddd;
+}

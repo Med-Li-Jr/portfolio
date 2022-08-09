@@ -12,7 +12,10 @@ import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
   {
-    path: "", component: MainLayoutComponent
+    path: "", component: MainLayoutComponent,
+  },
+  { 
+    path: '**', pathMatch: 'full', component: MainLayoutComponent 
   },
 ]
 const routerOptions: ExtraOptions = {

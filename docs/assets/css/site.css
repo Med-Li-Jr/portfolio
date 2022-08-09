@@ -118,3 +118,7 @@ a {
   color: black;
   box-shadow: 7px 7px 0px #ddd;
 }
+
+.outlink :hover {
+  font-weight: bold;
+}

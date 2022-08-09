@@ -1,30 +1,18 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CardProjectComponent } from './components/projects/card-project/card-project.component';
-import { DetailProjectComponent } from './components/projects/detail-project/detail-project.component';
-import { ListProjectComponent } from './components/projects/list-project/list-project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SideProjectComponent } from './components/projects/side-project/side-project.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  // {
-  //   path: "", redirectTo: "/home", pathMatch: "full"
-  // },
   {
     path: "", component: MainLayoutComponent
-  },
-  {
-    path: "projects", component: ListProjectComponent
-  },
-  {
-    path: "projects/:name", component: DetailProjectComponent
   },
 ]
 const routerOptions: ExtraOptions = {
@@ -46,11 +34,8 @@ export const RoutingComponents = [
   SkillsComponent,
   ProjectsComponent,
   AboutComponent,
-  ContactComponent,
   MenuComponent,
-  ListProjectComponent,
   MainLayoutComponent,
   CardProjectComponent,
-  DetailProjectComponent,
   SideProjectComponent
 ]

@@ -1,59 +1,21 @@
 <div class="row g-0 p-3 justify-content-center align-items-center">
     <div class="col-lg-6 col-md-10 col-sm-10 p-2 border border-dark" style="background-color: #f9f9f9;">
-        <!-- <div class="d-flex justify-content-center" style="object-fit: cover;">
-            <img src="assets/icons/Detail-Missions.png" class="myImg" alt="...">
-        </div> -->
 
         <div id="{{currentProject.carousel_name}}" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <!-- <div *ngIf="currentProject.images_app.length > 0"> -->
-
                 <button *ngFor="let item of currentProject.images_app; let i = index" type="button"
                     [attr.data-bs-target]="'#' + currentProject.carousel_name" [attr.data-bs-slide-to]="'' + i"
                     class="{{item.split(';')[0]}} bg-dark" aria-current="true"
                     [attr.aria-label]="'Slide ' + (i+1)"></button>
-                <!-- 
-                    <div *ngFor="let item of currentProject.images_app; let i = index">
-                        <button *ngIf="i != 0" type="button" [attr.data-bs-target]="'#' + currentProject.carousel_name"
-                            [attr.data-bs-slide-to]="''+ (i+1)" class="bg-dark" aria-current="true"
-                            [attr.aria-label]="'Slide '+ (i+1)"></button>
-                    </div> -->
-                <!-- </div> -->
-                <!-- <button type="button" [attr.data-bs-target]="'#' + currentProject.carousel_name"
-                    data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
-                <button type="button" [attr.data-bs-target]="'#' + currentProject.carousel_name"
-                    data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button> -->
             </div>
             <div class="carousel-inner">
 
-                <!-- <div *ngIf="currentProject.images_app.length > 0"> -->
-                <!-- <div class="carousel-item"> -->
                 <div *ngFor="let item of currentProject.images_app; let i = index"
                     class="carousel-item {{item.split(';')[0]}}">
                     <div class="d-flex justify-content-center p-3" style="height: 300px;">
                         <img src="{{item.split(';')[1]}}" class="d-block" style="height: auto; max-width: 100%;" alt="...">
                     </div>
-                    <!-- </div> -->
-                    <!-- 
-                        <div *ngFor="let item of currentProject.images_app; let i = index">
-                            <div *ngIf="i != 0" class="carousel-item">
-                                <div class="d-flex justify-content-center p-3" style="height: 300px">
-                                    <img src="{{item}}" class="d-block myImg" alt="...">
-                                </div>
-                            </div>
-                        </div> -->
                 </div>
-                <!-- </div> -->
-                <!-- <div class="carousel-item">
-                    <div class="d-flex justify-content-center p-3" style="height: 300px">
-                        <img src="assets/icons/Detail-Missions.png" class="d-block myImg" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center p-3" style="height: 300px">
-                        <img src="assets/icons/interfaces.png" class="d-block myImg" alt="...">
-                    </div>
-                </div> -->
             </div>
             <button class="carousel-control-prev" type="button"
                 [attr.data-bs-target]="'#' + currentProject.carousel_name" data-bs-slide="prev">
@@ -100,39 +62,3 @@
 
     </div>
 </div>
-
-<!-- <div class="form-control border border-dark text-center">
-
-    <div class="card">
-        <div class="row g-0">
-
-            <div class="d-flex justify-content-center" style="height: 125px;">
-                <img src="assets/icons/interfaces.png" class="myImg" alt="...">
-            </div>
-
-            <div class="col-sm-12">
-                <div class="card-body">
-                    <h5 class="fs-5 fw-bold">
-                        <a class="link-dark text-decoration-none" href="#">Card
-                            Title</a>
-                    </h5>
-
-
-                    <div class="d-flex flex-wrap gap-2 align-items-center justify-content-center my-3">
-                        <div class="div">
-                            <img src="assets/icons/website.png" height="25px" width="25px" class="mx-1" alt="...">
-                            <small class="fs-6">.Net Core / Angular</small>
-                        </div>
-                        <div>
-                            <img src="assets/icons/mobile.png" height="25px" width="25px" class="mx-1" alt="...">
-                            <small class="fs-6">Flutter</small>
-                        </div>
-                    </div>
-                    <div class="mt-2">
-                        <a routerLink="/projects/flettapps" class="btn btn-detail-project">See Detail</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->

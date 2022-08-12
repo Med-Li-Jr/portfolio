@@ -63,8 +63,8 @@ export let projectsDB: ProjectModal[] = [
         carousel_name: "uber_app",
         name: "Ride-Hailing App",
         description: `
-        An android app where a user can see, on a map, all available drivers within a certain radius around him.
-        It shows the user, an invoice for his trip before sending a request to the driver and after the trip ends.
+        Two android apps, one for the driver and one for the rider. It allows a rider to see, on a map, all available drivers within a certain radius around him.
+        It shows also to the rider, an invoice for his trip before sending a request to the driver and after the trip ends.
         `,
         is_mobile: true,
         is_web: false,

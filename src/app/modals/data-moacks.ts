@@ -35,7 +35,7 @@ export let projectsDB: ProjectModal[] = [
         It also shows, on a map, in real-time, the location of each driver when they start their missions.`,
         is_mobile: true,
         is_web: true,
-        link_url: "https://www.m-test-ang.tk/login",
+        link_url: "http://www.fleetapp.tk",
         technologies: [
             "PHP", 
             "Laravel",

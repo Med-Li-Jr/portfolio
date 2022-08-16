@@ -115,7 +115,7 @@ export let sideProjectsDB: ProjectModal[] = [
         From the equipment management to employee management and their schedule management.`,
         is_mobile: true,
         is_web: false,
-        link_url: "https://www.m-test-ang.tk/login",
+        link_url: "http://www.fleetapp.tk",
         technologies: [
             "JAVA",
             "Android Studio",

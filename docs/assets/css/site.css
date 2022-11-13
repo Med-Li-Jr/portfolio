@@ -12,6 +12,12 @@ a {
   text-decoration: none;
   color: black;
 }
+.home-link a, #about-page a {
+  font-weight: bold;
+}
+.home-link a:hover, #about-page a:hover {
+  border-bottom: solid black 3px;
+}
 
 .my_section {
   padding-top: 70px !important;

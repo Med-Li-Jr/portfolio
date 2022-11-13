@@ -35,14 +35,15 @@ export let projectsDB: ProjectModal[] = [
         It also shows, on a map, in real-time, the location of each driver when they start their missions.`,
         is_mobile: true,
         is_web: true,
-        link_url: "http://www.fleetapp.tk",
+        link_url: "https://med-li-jr.github.io/fleetapp",
         technologies: [
-            "PHP", 
-            "Laravel",
-            "NativeScript",  
-            "MySql",
-            "Firebase",
-            "GMap API"
+            "C#", 
+            ".Net Core API", 
+            "Angular", 
+            "Flutter", 
+            "SQL Server", 
+            "Firebase", 
+            "MapBox API",
         ],
         images_app: [
             "active;https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/licence1.png",
@@ -92,18 +93,17 @@ export let sideProjectsDB: ProjectModal[] = [
     {
         carousel_name: "fleet_app",
         name: "Fleet App",
-        description: `A new short version of the 'Fleet Management' project developed with new technologies.`,
+        description: `A version of the 'Fleet Management' project developed with other technologies.`,
         is_mobile: true,
         is_web: true,
         link_url: "",
         technologies: [
-            "C#", 
-            ".Net Core API", 
-            "Angular", 
-            "Flutter", 
-            "SQL Server", 
-            "Firebase", 
-            "MapBox API", 
+            "PHP", 
+            "Laravel",
+            "NativeScript",  
+            "MySql",
+            "Firebase",
+            "GMap API"
         ],
         images_app: [
         ],

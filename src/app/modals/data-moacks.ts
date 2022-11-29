@@ -13,7 +13,8 @@ export let projectsDB: ProjectModal[] = [
         link_url: "",
         technologies: [
             "C#", 
-            ".Net Core MVC/API", 
+            ".Net Core MVC", 
+            ".Net Core Web API", 
             "SQL Server", 
         ],
         images_app: [
@@ -61,6 +62,53 @@ export let projectsDB: ProjectModal[] = [
         ],
     },
     {
+        carousel_name: "spotify_app",
+        name: "Spotify Music Web App",
+        description: `
+            A music app that allows a user to list, search, stream tracks (songs) and get other data from his spotify account.
+            He can search tracks, see Recommendations/Liked/Recently Played Tracks, also can see his Albums, Artists, Playlists and Podcast saved.
+        `,
+        is_mobile: false,
+        is_web: true,
+        link_url: "https://med-li-jr.github.io/spotifyapp/",
+        technologies: [
+            "Bootstrap",
+            "Angular",
+            "Spotify API",
+        ],
+        images_app: [
+            "active;https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify1.png",
+            ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify2.png",
+            ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify3.png",
+            ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify4.png",
+            ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify5.png",
+            ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify6.png",
+            ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/spotify7.png",
+        ],
+    }
+] 
+
+export let sideProjectsDB: ProjectModal[] = [
+/*
+    {
+        carousel_name: "fleet_app",
+        name: "Fleet App",
+        description: `A version of the 'Fleet Management' project developed with other technologies.`,
+        is_mobile: true,
+        is_web: true,
+        link_url: "",
+        technologies: [
+            "PHP", 
+            "Laravel",
+            "NativeScript",  
+            "MySql",
+            "Firebase",
+            "GMap API"
+        ],
+        images_app: [
+        ],
+    },*/
+    {
         carousel_name: "uber_app",
         name: "Ride-Hailing App",
         description: `
@@ -84,28 +132,6 @@ export let projectsDB: ProjectModal[] = [
             ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/uber10.png",
             ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/uber11.png",
             ";https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/portfolio/uber12.png",
-        ],
-    }
-] 
-
-export let sideProjectsDB: ProjectModal[] = [
-
-    {
-        carousel_name: "fleet_app",
-        name: "Fleet App",
-        description: `A version of the 'Fleet Management' project developed with other technologies.`,
-        is_mobile: true,
-        is_web: true,
-        link_url: "",
-        technologies: [
-            "PHP", 
-            "Laravel",
-            "NativeScript",  
-            "MySql",
-            "Firebase",
-            "GMap API"
-        ],
-        images_app: [
         ],
     },
     {

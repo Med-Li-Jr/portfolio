@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { myInfo } from 'src/app/modals/data-moacks';
 
 @Component({
   selector: 'app-about',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  coordInfo = myInfo
   constructor() { }
 
   ngOnInit(): void {

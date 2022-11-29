@@ -17,3 +17,8 @@ export interface ProjectModal {
 
     images_app: string[];
 }
+
+export interface SkillsItem {
+    skill_name : string;
+    skill_img :string
+}

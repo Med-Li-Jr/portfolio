@@ -30,10 +30,10 @@
         </div>
     </div>
 
-    <div class="col-lg-6 col-md-10 col-sm-10 text-end mt-3">
+    <div class="col-lg-6 col-md-10 col-sm-10 text-start mt-3">
 
         <div class="card-body p-2 pe-0">
-            <h5 class="fs-3 fw-bold">
+            <h5 class="fs-4 fw-bold">
                 <span class="link-dark text-decoration-none">
                     <img *ngIf="currentProject.is_mobile" src="assets/icons/mobile.png" height="25px" width="25px"
                         class="mx-1" alt="...">
@@ -48,7 +48,7 @@
                     {{currentProject.description}}
                 </div>
             </div>
-            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end my-2">
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-start my-2">
                 <span class="badge bg-secondary p-2 m-1"
                     *ngFor="let item of currentProject.technologies">{{item}}</span>
             </div>
